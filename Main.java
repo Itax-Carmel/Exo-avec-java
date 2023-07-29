@@ -5,6 +5,7 @@ public class Main {
     Scanner scanner = new Scanner(System.in);
     // Je fais appel aux méthodes ici
     // Exercices sur les boucles avec JAVA
+    //Si tu veux utiliser/voir le résultat d'une méthode, décommente le, et rassure toi que dans le corps de la méthode que tous les codes ne sont pas commenté
     /*
      * dixEntierSuivant(scanner);
      * factorielle(scanner);
