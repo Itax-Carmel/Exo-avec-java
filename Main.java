@@ -7,12 +7,13 @@ public class Main {
     dixEntierSuivant(scanner);
     factorielle(scanner);
     sommeDUneChaineDEntier(scanner);
+    tableDeMultiplication(scanner);
     
     scanner.close();  
   }
   /*1. Ecrire un programme qui demande un nombre de départ, et qui ensuite affiche les dix nombres suivants. Par exemple, si l'utilisateur entre le nombre 17, le programme affichera les nombres de 18 à 27.*/
   static void dixEntierSuivant (Scanner scanner){
-    System.out.println("Veuillez saisir le nombre de depart: ");
+    System.out.println("Veuillez saisir le nombre de depart et le programme va vous donner les 10 entiers suivant: ");
     int numberUser = scanner.nextInt();
     for(int i = numberUser + 1; i <= numberUser + 10; i++){
       System.out.println(i);
@@ -38,5 +39,16 @@ public class Main {
       result = result + i;
     }
     System.out.println("Le résultat est: " + result);
+  }
+
+  /*4. Ecrire un programme qui demande un nombre de départ, et qui ensuite écrit la table de multiplication de ce nombre jusqu’à 10.*/
+  static void tableDeMultiplication  (Scanner scanner){
+    System.out.println("Veuillez saisir un nombre, et le programme va donner la table de multiplication à 10 de ce nombre ");
+    int numberUser = scanner.nextInt();
+    int result = 1;
+    for(int i = 0; i <= 10; i++){
+      result = numberUser * i;
+      System.out.println(numberUser + " * " + i + " = "+ result);
+    }
   }
 }
